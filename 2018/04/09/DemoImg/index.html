@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-  
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta charset="utf-8">
     <!-- Description, Keywords and Author -->
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Chachetona</title>
+    <title>
+        Chachetona
+    </title>
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
     <!--
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -16,22 +20,22 @@
 
     <!-- style -->
     <link rel="stylesheet" href="/css/style.css">
-    <!-- style -->
+        <!-- style -->
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-    <!-- responsive -->
-    <link rel="stylesheet" href="/css/responsive.css">
+            <!-- responsive -->
+            <link rel="stylesheet" href="/css/responsive.css">
 
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+                <!-- font-awesome -->
+                <link rel="stylesheet" href="/css/font-awesome.min.css">
 
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="/css/effects/set2.css">
-    <link rel="stylesheet" href="/css/effects/normalize.css">
-    <link rel="stylesheet" href="/css/effects/component.css">
-   
+                    <!-- font-awesome -->
+                    <link rel="stylesheet" href="/css/effects/set2.css">
+                        <link rel="stylesheet" href="/css/effects/normalize.css">
+                            <link rel="stylesheet" href="/css/effects/component.css">
+
 </head>
   <body>
     <!-- header -->
@@ -79,8 +83,12 @@
     <div class="blog-details">
         <article class="post-details" id="post-details">
             <header role="bog-header" class="bog-header text-center">
-                <h2>DemoImg</h2>
-                <h3><span>09 </span>04 2018</h3>
+                <h2>
+                    DemoImg
+                </h2>
+                <h3><span>09 </span>
+                    04 2018
+                </h3>
             </header>
             <figure>
                 <!--
@@ -89,14 +97,18 @@
 
             <div class="enter-content">
 
-                <p><p><img src="/2018/04/09/DemoImg/1.jpg" alt="img"></p>
-<h1 id="图片测试测试测"><a href="#图片测试测试测" class="headerlink" title="图片测试测试测"></a>图片测试测试测</h1></p>
+                <p>
+                    <p><img src="/2018/04/09/DemoImg/1.jpg" alt="img"></p>
+<h1 id="图片测试测试测"><a href="#图片测试测试测" class="headerlink" title="图片测试测试测"></a>图片测试测试测</h1>
+                </p>
 
             </div>
         </article>
 
         <!-- Comments -->
+        <div id="comment"></div>
 
+        <!--
         <div class="comments-pan">
             <h3>3 Comments</h3>
             <ul class="comments-reply">
@@ -223,12 +235,22 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
     </div>
 </main>
-
+<script>
+    new Valine({
+        el: '#comment',
+        notify: false,
+        verify: true,
+        appId: 'qeSCPhhnwMiKs1eSituU4FRF-gzGzoHsz',
+        appKey: 'VNwaAP23IvyeamCEsOQKVTwS',
+        placeholder: 'message',
+        path: window.location.pathname,
+        avatar: 'mm'
+    });
+</script>
 <!-- main -->
-
     </main>
       <!-- footer -->
 
